@@ -285,7 +285,7 @@ div.informacion-evento p i {
 }
 
 p.ciudad {
-  float: center;
+  float: center  ;
   /* text-align: inherit; */
 }
 p.telefono {
@@ -341,7 +341,7 @@ nav.navegacion-principal {
 }
 nav.navegacion-principal a {
    font-family: 'Oswald', sans-serif;
-   color: #2c20d1;
+   color: #3a18fe;
    font-size: 1.3em;
    text-transform: uppercase;
    text-decoration: none;
@@ -651,7 +651,7 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
-  background-color: green;
+  background-color: 3a18fe;
 }
 /**+ Testimoniales   **/
 div.testimoniales {
