@@ -595,6 +595,27 @@ p.numero {
   margin: 0 0 10px 0;
   font-family: 'Oswald', sans-serif;
 }
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.icono h3 {
+    text-transform: uppercase;
+}
+
+
 /** Tabla de Precios **/
 ul.lista-precios > li {
   padding: 10px;
