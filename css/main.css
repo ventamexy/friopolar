@@ -355,6 +355,7 @@ nav.navegacion-principal a {
 
 nav.navegacion-principal a:hover {
   background-color: #3a18fe;
+  color: #ffffff;
 }
 
 nav.navegacion-principal a:last-child {
@@ -541,7 +542,7 @@ div.invitado p {
   width: 100%;
   text-align: left;
   font-family: 'Oswald', sans-serif;
-  color: #5b98e7;
+  color: #ffffff;
   text-transform: uppercase;
 -webkit-transition: all .5s ease-in-out;
 }
