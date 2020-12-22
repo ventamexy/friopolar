@@ -28,6 +28,25 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <script type="text/javascript" src="js/smooth-scroll.min.js">
+    </script>
+
+    <script type="text/javascript">
+    // All animations will take exactly 500ms
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+      speedAsDuration: true
+      });
+    </script>
 </head>
 
 <body class="index">
@@ -64,7 +83,7 @@
                                     <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                                     <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
                                     <!-- <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a> -->
-                                    <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                                 </nav>
                                 <br>
@@ -110,10 +129,10 @@
                 <a href="calendario.html">Servicios</a>
                 <a href="invitados.html">Contacto</a>
                 <a href="registro.html">Reservaciones</a> -->
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
-                <a href="#">Reservaciones</a>
+                <a data-scroll href="#">Inicio</a>
+                <a data-scroll href="#servicios">Servicios</a>
+                <a data-scroll href="#contacto">Contacto</a>
+                <a data-scroll href="#">Reservaciones</a>
             </nav>
         </div>
         <!--.contenedor-->
@@ -127,7 +146,7 @@
     </section>
     <!--seccion-->
 
-    <section class="contenedor seccion">
+    <section class="contenedor seccion" id="beneficios">
       <h2>Beneficios</h2>
           <div class="iconos-nosotros">
             <div class="icono">
@@ -164,7 +183,7 @@
             <div class="contenido contenedor">
                 <!-- <p> regístrate al newsletter:</p> -->
                 <h3>Frio Polar HL</h3>
-                <a href="#mc_embed_signup" class="boton_newsletter button transparente">Contactanos</a>
+                <!-- <a href="#mc_embed_signup" class="boton_newsletter button transparente">Contactanos</a> -->
             </div>
             <!--.contenido-->
         </div>
@@ -260,7 +279,7 @@
     <!--.programa-->
 
 
-<section class="contenedor ">
+<section class="contenedor" id="servicios">
   <h2>Nuestros servicios</h2>
     <!-- <p>
       Las garantias en los proyectos, instalaciones y servicios de mantenimiento tanto preventivo Como
@@ -335,7 +354,7 @@
 
           <li>
               <div class="invitado">
-                  <a class="invitado-info" href="#area01">
+                  <a class="invitado-info" href=".area01">
                     <img src="img/areas/area01.jpg" alt="Imagen servicio">
                     <p>Industrial/Comercial</p>
                   </a>
@@ -344,17 +363,25 @@
           </li>
 
             <div style="display:none;">
-                <div class="invitado-info" id="area01">
+                <div class="invitado-info area01">
                     <h2>Industrial / Comercial</h2>
                     <img src="img/areas/area01.jpg" alt="">
-                    <p>Aqui se describe o se dan las descripciones de lo que se ofrece en este sercicio.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
             </div>
 
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area02">
+                    <a class="invitado-info" href=".area02">
                       <img src="img/areas/area02.jpg" alt="Imagen invitado">
                         <p>Tiendas Departamentales</p>
                     </a>
@@ -364,10 +391,18 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area02">
+                <div class="invitado-info area02">
                     <h2>Tiendas Departamentales</h2>
                     <img src="img/areas/area02.jpg" alt="">
-                    <p>Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
@@ -375,7 +410,7 @@
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area03">
+                    <a class="invitado-info" href=".area03">
                          <img src="img/areas/area03.jpg" alt="Imagen invitado">
                          <p>Site de Computo</p>
                      </a>
@@ -385,10 +420,18 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area03">
+                <div class="invitado-info area03">
                     <h2>Site de computo</h2>
                     <img src="img/areas/area03.jpg" alt="">
-                    <p>placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
@@ -396,7 +439,7 @@
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area04">
+                    <a class="invitado-info" href=".area04">
                       <img src="img/areas/area04.jpg" alt="Imagen invitado">
                         <p>Centros Comerciales</p>
                     </a>
@@ -406,17 +449,24 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area04">
+                <div class="invitado-info area04">
                     <h2>Centros Comerciales</h2>
                     <img src="img/areas/area04.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
-
             </div>
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area05">
+                    <a class="invitado-info" href=".area05">
                        <img src="img/areas/area05.jpg" alt="Imagen invitado">
                        <p>Hoteles</p>
                     </a>
@@ -426,18 +476,25 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area05">
+                <div class="invitado-info area05">
                     <h2>Hoteles</h2>
                     <img src="img/areas/area05.jpg" alt="">
-                    <p>placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
-
             </div>
 
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area06">
+                    <a class="invitado-info" href=".area06">
                          <img src="img/areas/area06.jpg" alt="Imagen invitado">
                          <p>Hospitales</p>
                      </a>
@@ -447,18 +504,25 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area06">
+                <div class="invitado-info area06">
                     <h2>Hospitales</h2>
                     <img src="img/areas/area06.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at
-                        ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area07">
+                    <a class="invitado-info" href=".area07">
                          <img src="img/areas/area07.jpg" alt="Imagen invitado">
                          <p>Escuelas</p>
                      </a>
@@ -468,18 +532,25 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area07">
+                <div class="invitado-info area07">
                     <h2>Escuelas</h2>
                     <img src="img/areas/area07.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at
-                        ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area08">
+                    <a class="invitado-info" href=".area08">
                          <img src="img/areas/area08.jpg" alt="Imagen invitado">
                          <p>Naves Industriales</p>
                      </a>
@@ -489,18 +560,25 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area08">
+                <div class="invitado-info area08">
                     <h2>Naves Industriales</h2>
                     <img src="img/areas/area08.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at
-                        ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
 
             <li>
                 <div class="invitado">
-                    <a class="invitado-info" href="#area09">
+                    <a class="invitado-info" href=".area09">
                          <img src="img/areas/area09.jpg" alt="Imagen invitado">
                          <p>industria en general</p>
                      </a>
@@ -510,11 +588,18 @@
 
             <div style="display:none;">
 
-                <div class="invitado-info" id="area09">
+                <div class="invitado-info area09">
                     <h2>industria en general</h2>
                     <img src="img/areas/area09.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at
-                        ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+                    <p>
+                      Soluciones
+                    </p>
+                    <ul>
+                      <li>*Aire acondicionado</li>
+                      <li>*refrigeracion</li>
+                      <li>*Ventilación</li>
+                      <li>*Extracción</li>
+                    </ul>
                 </div>
 
             </div>
@@ -591,81 +676,20 @@
 
     <div id="mapa" class="mapa" style="position: relative; overflow: hidden;"></div>
 
-    <section class="seccion">
-      <!-- <div class="titulos">Clientes</div> -->
-        <h2>clientes</h2>
 
-        <div class="row">
-          <div class="container">
-            <div class="col-md-3 col-sm-6 col-xs-12 cliente1"></div>
-          </div>
-        </div>
 
-        <div class="testimoniales contenedor clearfix">
-          <div class="testimonial">
-            <img src="img/c.png" alt="imagen testimonial">
-          </div>
-
-          <div class="testimonial">
-                  <img src="img/c1_sct.jpg" alt="imagen testimonial">
-          </div>
-
-          <div class="testimonial">
-                  <img src="img/c3_bd.jpg" alt="imagen testimonial">
-          </div>
-          <div class="testimonial">
-                  <img src="img/c5_femsa.jpg" alt="imagen testimonial">
-          </div>
-
-        <!-- <div class="testimoniales contenedor clearfix">
-            <div class="testimonial">
-                <blockquote>
-                    <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.
-                        <p>
-                            <footer class="info-testimonial clearfix">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                </blockquote>
-            </div> -->
-            <!--.testimonial-->
-            <!-- <div class="testimonial">
-                <blockquote>
-                    <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.
-                        <p>
-                            <footer class="info-testimonial clearfix">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                </blockquote>
-            </div> -->
-            <!--.testimonial-->
-            <!-- <div class="testimonial">
-                <blockquote>
-                    <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.
-                        <p>
-                            <footer class="info-testimonial clearfix">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                </blockquote>
-            </div> -->
-            <!--.testimonial-->
-        <!-- </div> -->
-    </section>
-
-    <section class="seccion">
+    <section class="seccion" id="contacto">
       <!-- <div class="titulos">Clientes</div> -->
       <!-- <main class="contenedor seccion contenido-centrado"> -->
       <div class="testimoniales contenedor clearfix">
         <h2>Contactanos</h2>
         <!-- <h1>Frio Polar HL</h1> -->
-        <p>Nicolas Bravo 341. centro, col. Lázaro Cárdenas, Mich, Mx.</p>
+        <p>Nicolas Bravo 341. Centro, Col. Lázaro Cárdenas, Mich, Mx.</p>
         <p>telefonos (753)-537-13-49, (753)-181-11-95, (753)-168-34-07</p>
-        <h5>Correo:<a href="mailto:carlosworld93@gmail.com"> carlosworld93@gmail.com</a></h5>
-              <form class="contacto" action="">
-                <fieldset>
-                  <legend>Información Personal</legend>
+        <h5>Correo:<a href="mailto:venta.mexy@gmail.com"> venta.mexy@gmail.com</a></h5>
+        <p>whatsapp:</p>
+              <!-- <form class="contacto" action=""> -->
+                  <!-- <legend>Información Personal</legend>
                   <label for="nombre">Nombre:</label>
                   <input type="text" id="nombre" placeholder="Tu Nombre">
 
@@ -676,9 +700,53 @@
                   <input type="tel" id="telefono" placeholder="Tu Telefono">
 
                   <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje"></textarea>
-                </fieldset>
-              </form>
+                  <textarea id="mensaje"></textarea> -->
+
+                  <div id="mc_embed_signup">
+                  <form action="https://app.us7.list-manage.com/subscribe/post?u=fb25fcceff6514ba64ed2fc05&amp;id=684348ee0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <!-- <fieldset> -->
+                    <div id="mc_embed_signup_scroll" class="contacto">
+                          	<h2>Información Personal</h2>
+                          <div class="indicates-required"><span class="asterisk">*</span> Se requiere</div>
+                          <div class="mc-field-group">
+                          	<label for="mce-EMAIL">Correo Electonico <span class="asterisk">*</span>
+                          </label>
+                          	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                          </div>
+                          <div class="mc-field-group">
+                            <label for="mce-PHONE">Telefono <span class="asterisk">*</span>
+                          </label>
+                            <input type="tel" value="" name="PHONE" class="required phone" id="mce-PHONE">
+                          </div>
+                          <div class="mc-field-group">
+                          	<label for="mce-FNAME">Nombre's </label>
+                          	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                          </div>
+                          <div class="mc-field-group">
+                          	<label for="mce-LNAME">Apellido's </label>
+                          	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                          </div>
+                          <!-- <div class="mc-field-group size1of2">
+                          	<label for="mce-BIRTHDAY-month">Birthday </label>
+                          	<div class="datefield">
+                          		<span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> /
+                          		<span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span>
+                          		<span class="small-meta nowrap">( mm / dd )</span>
+                          	</div>
+                          </div>	 -->
+                          <div id="mce-responses" class="clear">
+                          		<div class="response" id="mce-error-response" style="display:none"></div>
+                          		<div class="response" id="mce-success-response" style="display:none"></div>
+                          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fb25fcceff6514ba64ed2fc05_684348ee0d" tabindex="-1" value=""></div>
+                              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                          </div>
+                    <!-- </fieldset> -->
+                  </form>
+                  </div>
+                  <!-- <a href="#mc_embed_signup" class="boton_newsletter button ">Contactanos</a> -->
+              <!-- </form> -->
+
           </div>
       <!-- </main> -->
         <!-- <div class="testimoniales contenedor clearfix">
@@ -748,8 +816,12 @@
         <div class="contenedor clearfix">
             <div class="footer-informacion">
                 <h3>Sobre <span>FRIO POLAR HL</span></h3>
-                <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex
-                    blandit vehicula. Morbi porttitor tempus euismod.</p>
+                <p>Misión</p>
+                <p>Bien y a la primera, garantizado nuestro trabajo, con la calidad que nos distingue, apoyándonos en nuestra experiencia de más de 30 años en el mercado laboral, teniendo como referencia nuestros trabajos realizados a las distintas empresas y organizaciones , tanto públicas como privadas.</p>
+
+                <p>Visión</p>
+                <p>Ser siempre de las primeras empresas en el rubro de la construcción, manteniendo nuestros estándares de calidad a la vanguardia, yendo de la mano con el avance tecnológico en todos nuestros proyectos y mantenernos en constante crecimiento ingresando a nuevos mercados, incluso internacionales</p>
+
                 <p>Nicolas Bravo 341. centro, col. Lázaro Cárdenas, Mich, Mx.</p>
                 <p>Atendemos desde las <span>7am a 8pm.</span></p>
                 <p>telefonos (753)-537-13-49, (753)-181-11-95, (753)-168-34-07</p>
@@ -770,7 +842,7 @@
                     <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                     <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
                     <!-- <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a> -->
-                    <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </nav>
             </div>
@@ -870,7 +942,11 @@
         ga('send', 'pageview');
     </script>
 
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+
     <script type="text/javascript">
         require(["mojo/signup-forms/Loader"], function(L) {
             L.start({
