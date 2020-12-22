@@ -68,11 +68,11 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
+/* fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
+} */
 
 /*
  * Allow only vertical resizing of textareas.
@@ -144,9 +144,9 @@ h2 {
 h2::after {
   content: '';
   margin: 0 auto;
-  /* background-image: url(../img/separador.png); */
-  height: 30px;
-  width: 100px;
+  /* background-image: url(../img/separador4.png); */
+  height: 53px;
+  width: 1117px;
   display: block;
 }
 h3 {
@@ -193,6 +193,16 @@ ul {
 .float-right {
   float: right;
 }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #3a18fe;
+  text-decoration: none;
+}
+
+
+
 /** Lettering**/
 h1.nombre-sitio span {
   position: relative;
@@ -256,7 +266,7 @@ nav.redes-sociales {
 }
 nav.redes-sociales a {
   color: #ffffff;
-  font-size: 2em;
+  font-size: 3em;
   margin-right: 20px;
 }
 nav.redes-sociales a:last-child{
@@ -616,24 +626,62 @@ p.numero {
     text-transform: uppercase;
 }
 
-/** Iconos servicios **/
+
+/** servicios **/
+
 @media (min-width: 768px) {
-    .iconos-servicios {
+    .servicios-contenido {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
-.icono2 {
+
+.servicios-contenido div {
+    width: 400px;
+    height: 300px;
+}
+
+.sercicio {
     text-align: justify;
 }
 @media (min-width: 768px) {
-    .icono2 {
+    .sercicio {
         flex-basis: calc(33.3% - 1rem);
+        /* float: left;
+        width: 50%; */
     }
 }
-.icono2 h3 {
-    text-transform: uppercase;
+.servicio h3 {
+    text-transform:uppercase;
+    text-align: justify;
+    /* color: #b3d4fc; */
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    margin-bottom: 2rem;
 }
+
+.servicio ul {
+    text-transform:lowercase;
+    text-align: left;
+    /* color: #b3d4fc; */
+    font-size: 1rem;
+    list-style-type: circle;
+    padding: 15px;
+    display: block;
+}
+
+
+
+/* ul.servicio-lista > li {
+  padding: 10px;
+}
+@media only screen and (min-width:768px){
+  ul.servicio-lista > li {
+        float: left;
+        width: 50%;
+  }
+} */
 
 
 /** Tabla de Precios **/
@@ -692,7 +740,7 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
-  background-color: 3a18fe;
+  /* background-color: #3a18fe; */
 }
 /**+ Testimoniales   **/
 div.testimoniales {
@@ -1322,4 +1370,54 @@ table.registrados tr:nth-child(4n-1) {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+/* Contacto */
+h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4f4f4f;
+}
+.contacto p{
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  margin: 2rem 0 0 0;
+}
+
+legend{
+  font-size: 2rem;
+  color: #4f4f4f;
+}
+
+label{
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select{
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+input[type="radio"]{
+  width: auto;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  height: 10rem;
 }
