@@ -179,8 +179,8 @@ h2::after {
   content: '';
   margin: 0 auto;
   /* background-image: url(../img/separador4.png); */
-  height: 53px;
-  width: 1117px;
+  height: 30px;
+  width: 100px;
   display: block;
 }
 h3 {
@@ -280,12 +280,15 @@ h1.nombre-sitio span {
 /** Header **/
 
 div.hero {
-  background-image: url(../img/01.jpeg);
+  background-image: url(../img/01.jpg);
   height: 100vh;
   background-position: top center;
   background-size: cover;
+  /* height: 100vh;
+  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 div.contenido-header {
   padding-top: 40px;
@@ -359,13 +362,13 @@ div.barra {
   padding: 20px 0;
 }
 .fixed {
-  position: fixed;
+  position:fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 2;
 }
-div.logo{
+/* div.logo{
   width: 100%;
   float: left;
 }
@@ -377,7 +380,7 @@ div.logo img {
     width:33%;
 
   }
-}
+} */
 /** Nav principal **/
 nav.navegacion-principal {
   display: none;
@@ -451,7 +454,7 @@ div.menu-movil span{
 }
 
 /** Talleres **/
-section.programa {
+/* section.programa {
   position: relative;
 }
 div.contenedor-video {
@@ -492,8 +495,8 @@ nav.menu-programa {
     nav.menu-programa {
         display: table;
     }
-}
-nav.menu-programa a {
+} */
+/* nav.menu-programa a {
   display: block;
   text-align: center;
   color: #000000;
@@ -504,8 +507,8 @@ nav.menu-programa a {
   position: relative;
     padding-bottom: 10px;
     border-bottom: 1px solid #5b98e7;
-}
-nav.menu-programa a.activo::after {
+} */
+/* nav.menu-programa a.activo::after {
   position: absolute;
   content: '';
   left:0;
@@ -514,7 +517,7 @@ nav.menu-programa a.activo::after {
   margin-right: auto;
   height: 20px;
   width: 30px;
-  /* background-image: url('../img/talleres-flecha.jpg'); */
+  background-image: url('../img/talleres-flecha.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   bottom: -20px;
@@ -532,7 +535,7 @@ div.detalle-evento p i {
 }
 div.ocultar {
   display: none;
-}
+} */
 /**detalle evento **/
 div.detalle-evento {
   margin-top: 20px;
@@ -602,16 +605,13 @@ div.invitado:hover p {
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-filter: brightness(30%);
-  filter: brightness(50%);
 }
 div.contador {
   position: relative;
   height: auto;
 }
 div.contador::before  {
-  background-image: url(../img/02.jpeg);
+  background-image: url(../img/bg-resumen.jpg);
   content:'';
 }
 
@@ -674,6 +674,7 @@ p.numero {
 .servicios-contenido div {
     width: 400px;
     height: 300px;
+    margin-bottom: 50px;
 }
 
 .sercicio {
@@ -846,7 +847,7 @@ div.newsletter {
   height: auto;
 }
 div.newsletter::before {
-  background-image: url(../img/02.jpeg);
+  background-image: url(../img/bg-resumen.jpg);
   content: '';
   background-color: rgba(0,0,0,0.8);
 }
