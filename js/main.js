@@ -7,7 +7,7 @@ var api="AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";function initMap(){var n={lat:
 
 $(function() {
 if (document.getElementById('mapa')) {
-    
+
 var map = L.map('mapa').setView([17.960890, -102.195890], 17);
 
 

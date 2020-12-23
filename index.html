@@ -341,8 +341,7 @@
                   <li>Rehebilitacion de equipo de refrigeracion industrial</li>
               </ul>
             </fieldset>
-        </div>
-    </div>
+        </div></div>
 </section>
 
 
@@ -629,9 +628,9 @@
         </div>
     </div> -->
 
-    <section class="precios seccion">
+    <!-- <section class="precios seccion">
         <h2>Precios</h2>
-        <!-- <div class="contenedor">
+        <div class="contenedor">
             <ul class="lista-precios clearfix">
                 <li>
                     <div class="tabla-precio">
@@ -671,10 +670,12 @@
                     </div>
                 </li>
             </ul>
-        </div> -->
-    </section>
-
-    <div id="mapa" class="mapa" style="position: relative; overflow: hidden;"></div>
+        </div>
+    </section> -->
+<section class="ubicacion seccion">
+  <h2>Ubicación</h2>
+  <div id="mapa" class="mapa"></div>
+</section>
 
 
 
@@ -687,7 +688,7 @@
         <p>Nicolas Bravo 341. Centro, Col. Lázaro Cárdenas, Mich, Mx.</p>
         <p>telefonos (753)-537-13-49, (753)-181-11-95, (753)-168-34-07</p>
         <h5>Correo:<a href="mailto:venta.mexy@gmail.com"> venta.mexy@gmail.com</a></h5>
-        <p>whatsapp:</p>
+        <!-- <p>whatsapp:</p> -->
               <!-- <form class="contacto" action=""> -->
                   <!-- <legend>Información Personal</legend>
                   <label for="nombre">Nombre:</label>
@@ -842,7 +843,8 @@
                     <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                     <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
                     <!-- <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a> -->
-                    <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target="_blanck"
+                    href="https://api.whatsapp.com/send?phone=7531090400&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </nav>
             </div>
@@ -874,7 +876,7 @@
                         <div class="indicates-required"><span class="asterisk">*</span> es obligatorio</div>
                         <div class="mc-field-group">
                             <label for="mce-EMAIL">Correo Electrónico  <span class="asterisk">*</span>
-          </label>
+                            </label>
                             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                         </div>
                         <div id="mce-responses" class="clear">
@@ -903,6 +905,41 @@
             </script>
             <!--End mc_embed_signup-->
         </div>
+
+        <!-- whatsapp -->
+        <a id="app-whatsapp"
+            target="_blanck"
+            href="https://api.whatsapp.com/send?phone=7531090400&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Load Facebook SDK for JavaScript -->
+              <div id="fb-root"></div>
+              <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      xfbml            : true,
+                      version          : 'v9.0'
+                    });
+                  };
+
+                  (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+              </script>
+
+                <!-- Your Chat Plugin code -->
+                <div class="fb-customerchat"
+                  attribution=setup_tool
+                  page_id="106228308001764"
+                  theme_color="#0A7CFF"
+                  logged_in_greeting="Hola, como podemos ayudarte?"
+                  logged_out_greeting="Hola, como podemos ayudarte?">
+                </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
