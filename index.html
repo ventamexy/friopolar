@@ -58,9 +58,9 @@
         <div class="hero">
             <div class="contenido-header">
                 <nav class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/Frio-Polar-HL-100163542017439"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=7531090400&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </nav>
                 <div class="informacion-evento">
                         <!-- <div class="contenido-programa"> -->
@@ -92,9 +92,10 @@
 
             <nav class="navegacion-principal clearfix">
                 <a data-scroll href="#">Inicio</a>
+                <a data-scroll href="#beneficios">Beneficios</a>
                 <a data-scroll href="#servicios">Servicios</a>
+                <a data-scroll href="#soluciones">Soluciones</a>
                 <a data-scroll href="#contacto">Contacto</a>
-                <a data-scroll href="#">Reservaciones</a>
             </nav>
         </div>
         <!--.contenedor-->
@@ -207,7 +208,7 @@
             </div></div>
     </section>
 
-    <section class="invitados contenedor seccion">
+    <section class="invitados contenedor seccion"  id="soluciones">
         <h2>Soluciones por area</h2>
         <ul class="lista-invitados clearfix">
           <li>
@@ -523,16 +524,17 @@
 
             <div class="ultimos-tweets">
               <h3>Últimas <span>Publicaciones</span></h3>
-              <div class="fb-page" data-href="https://www.facebook.com/carlosworld93/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/carlosworld93/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/carlosworld93/">Tecnoworldlzc</a></blockquote></div>
+              <!-- <div class="fb-page" data-href="https://www.facebook.com/carlosworld93/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/carlosworld93/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/carlosworld93/">Tecnoworldlzc</a></blockquote></div> -->
+              <div class="fb-page" data-href="https://www.facebook.com/Frio-Polar-HL-100163542017439" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Frio-Polar-HL-100163542017439" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Frio-Polar-HL-100163542017439">Frio Polar HL</a></blockquote></div>
             </div>
+
 
             <div class="menu">
                 <h3>Redes <span>sociales</span></h3>
                 <nav class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                    <a target="_blanck"
-                    href="https://api.whatsapp.com/send?phone=7531090400&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a target="_blanck" href="https://www.facebook.com/Frio-Polar-HL-100163542017439"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a target="_blanck" href="https://api.whatsapp.com/send?phone=7531090400&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </nav>
             </div>
         </div>
@@ -601,32 +603,32 @@
         </a>
 
         <!-- Load Facebook SDK for JavaScript -->
-              <div id="fb-root"></div>
-              <script>
-                  window.fbAsyncInit = function() {
-                    FB.init({
-                      xfbml            : true,
-                      version          : 'v9.0'
-                    });
-                  };
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v9.0'
+            });
+          };
 
-                  (function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-              </script>
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-                <!-- Your Chat Plugin code -->
-                <div class="fb-customerchat"
-                  attribution=setup_tool
-                  page_id="106228308001764"
-                  theme_color="#0A7CFF"
-                  logged_in_greeting="Hola, como podemos ayudarte?"
-                  logged_out_greeting="Hola, como podemos ayudarte?">
-                </div>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="100163542017439"
+        theme_color="#0A7CFF"
+        logged_in_greeting="Hola, en que puedo ayudarlo?"
+        logged_out_greeting="Hola, en que puedo ayudarlo?">
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -644,8 +646,9 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1" nonce="CaYGDE3J"></script>
-
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1" nonce="CaYGDE3J"></script> -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="HW6PS9YL"></script>
+    <div id="fb-root"></div>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap" async defer></script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -671,7 +674,7 @@
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <!--End mc_embed_signup-->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         require(["mojo/signup-forms/Loader"], function(L) {
             L.start({
                 "baseUrl": "mc.us11.list-manage.com",
@@ -679,7 +682,4 @@
                 "lid": "20463b69f2"
             })
         })
-    </script>
-
-</body>
-</html>
+    </script> -->
