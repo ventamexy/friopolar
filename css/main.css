@@ -18,28 +18,6 @@ html {
 
 /* Estilos whatsapp y messenger */
 
-#app-messenger, #app-whatsapp{
-	position: fixed;
-	right: 24px;
-	bottom: 25px;
-	width: 60px;
-	z-index: 1000;
-	display: none;
-}
-#app-whatsapp{
-	bottom: 95px;
-	display: block;
-}
-#app-messenger i, #app-whatsapp i{
-	font-size: 63px;
-}
-#app-whatsapp i{
-	color: #1ebea5;
-}
-#app-messenger i{
-	color: #0084ff;
-}
-
 @media screen and (max-width: 766px){
 	#fb-root{
 		display: none;
@@ -780,7 +758,8 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
-  /* background-color: #3a18fe; */
+  background-color: #3a18fe;
+  /* position: absolute; */
 }
 /**+ Testimoniales   **/
 div.testimoniales {
