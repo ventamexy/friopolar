@@ -675,9 +675,11 @@ p.numero {
 }
 
 .servicios-contenido div {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+    width: 300px;
+    /* height: 10px; */
+
 }
 
 .sercicio {
