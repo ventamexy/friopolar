@@ -62,6 +62,7 @@
       speed: 1500,
       speedAsDuration: true
       });
+      // var routeData = route.split("#")[0];
     </script>
 </head>
 
@@ -108,11 +109,11 @@
             </div>
 
             <nav class="navegacion-principal clearfix">
-                <a data-scroll href="#">Inicio</a>
-                <a data-scroll href="#beneficios">Beneficios</a>
-                <a data-scroll href="#servicios">Servicios</a>
-                <a data-scroll href="#soluciones">Soluciones</a>
-                <a data-scroll href="#contacto">Contacto</a>
+                <a data-page="inicio"  href="javascript:void(0)">Inicio</a>
+                <a  data-page="beneficios" href="javascript:void(0)">Beneficios</a>
+                <a data-page="servicios" href="javascript:void(0)">Servicios</a>
+                <a data-page="soluciones" href="javascript:void(0)">Soluciones</a>
+                <a  data-page="contacto" href="javascript:void(0)">Contacto</a>
             </nav>
         </div>
         <!--.contenedor-->
@@ -120,7 +121,7 @@
     <!--.barra-->
 
 
-    <section class="contenedor seccion" id="beneficios">
+    <section class="contenedor seccion page"  id="beneficios">
       <h2>Beneficios</h2>
           <div class="clearfix iconos-nosotros">
             <div class="icono">
@@ -160,7 +161,7 @@
     <!--.programa-->
 
 
-    <section class="contenedor" id="servicios">
+    <section class="contenedor page"  id="servicios">
       <h2>Nuestros servicios</h2>
         <!-- <p>
           Las garantias en los proyectos, instalaciones y servicios de mantenimiento tanto preventivo Como
@@ -222,7 +223,7 @@
             </div></div>
     </section>
 
-    <section class="invitados contenedor seccion"  id="soluciones">
+    <section class="invitados contenedor seccion page"  id="soluciones">
         <h2>Soluciones por area</h2>
         <ul class="lista-invitados clearfix">
           <li>
@@ -471,7 +472,7 @@
 </section>
 <div id="mapa" class="mapa"></div>
 
-    <section class="seccion" id="contacto">
+    <section class="seccion page" id="contacto">
       <div class="testimoniales contenedor clearfix">
         <h2>Contactanos</h2>
         <p>Nicolas Bravo 341. Centro, Cd. Lázaro Cárdenas, Mich, Mx.</p>

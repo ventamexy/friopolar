@@ -16,7 +16,14 @@ html {
     line-height: 1.4;
 }
 
+a.url{
+pointer-events: none;
+cursor: default;
+}
 
+div.page {
+  min-height:1000px;
+  }
 
 /* Estilos whatsapp y messenger */
 
@@ -264,6 +271,10 @@ div.hero {
   height: 100vh;
   background-position: top center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* -webkit-filter: brightness(30%);
+  filter: brightness(50%); */
   /* height: 100vh;
   background-position: top center;
   background-size: cover;
