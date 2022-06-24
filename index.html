@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosFooter.css">
+    <link rel="stylesheet" href="css/mediaQuerys.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -66,39 +67,80 @@
 
 <body class="index">
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal"
                 aria-controls="navPrincipal" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center flex-wrap" id="navPrincipal">
                 <ul class="navbar-nav justify-content-center w-100 navegacion-paginas">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                    <a class="nav-link" href="#beneficios">Beneficios</a>
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                    <a class="nav-link" href="trabajosrealizados.html">Trabajos realizados</a>
-                    <a class="nav-link" href="galeria.html">Galería</a>
-                    <a class="nav-link" href="#soluciones">Soluciones</a>
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <li>
+                        <a class="nav-link" href="#inicio">
+                            <i class="fa fa-circle"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#beneficios">
+                            <i class="fa fa-circle"></i>
+                            Beneficios
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#servicios">
+                            <i class="fa fa-circle"></i>
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="trabajosrealizados.html">
+                            <i class="fa fa-circle"></i>
+                            Trabajos realizados
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="galeria.html">
+                            <i class="fa fa-circle"></i>
+                            Galería
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#soluciones">
+                            <i class="fa fa-circle"></i>
+                            Soluciones
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contacto">
+                            <i class="fa fa-circle"></i>
+                            Contacto
+                        </a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav justify-content-center w-100 navegacion-paginas">
                     <li class="nav-item">
-                        <i class="fa fa-globe"></i>
-                        <a class="nav-link" target="_blank" href="https://ingenieriaconstrumex.com">Ingeniería
-                            Construmex</a>
+                        <a class="nav-link" target="_blank" href="https://ingenieriaconstrumex.com">
+                            <i class="fa fa-globe"></i>
+                            Ingeniería Construmex
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-globe"></i>
-                        <a class="nav-link" target="_blank" href="https://mantenimientomicasa.com">Mantenimiento mi
-                            Casa</a>
+                        <a class="nav-link" target="_blank" href="https://mantenimientomicasa.com">
+                            <i class="fa fa-globe"></i>
+                            Mantenimiento mi Casa
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-globe"></i>
-                        <a class="nav-link" target="_blank" href="https://luminasolarmex.com">Lumina SolarMex</a>
+                        <a class="nav-link" target="_blank" href="https://luminasolarmex.com">
+                            <i class="fa fa-globe"></i>
+                            Lumina SolarMex
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-globe"></i>
-                        <a class="nav-link" target="_blank" href="https://plafonmexy.com">Plafón Mexy</a>
+                        <a class="nav-link" target="_blank" href="https://plafonmexy.com">
+                            <i class="fa fa-globe"></i>
+                            Plafón Mexy
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -171,8 +213,8 @@
     <!--.programa-->
     <section class="contenedor page my-5" id="servicios">
         <h2>Nuestros servicios</h2>
-        <div class="servicios-contenido row">
-            <div class="servicio col-12 col-md-6 col-lg-3">
+        <div class="servicios-contenido row mx-0">
+            <div class="servicio col-12 col-md-6 col-lg-3 row mx-0">
                 <fieldset>
                     <legend>Mantenimiento de equipo de aire acondicionado</legend>
                     <hr>
@@ -196,7 +238,7 @@
                     </ul>
                 </fieldset>
             </div>
-            <div class="servicio col-12 col-md-6 col-lg-3">
+            <div class="servicio col-12 col-md-6 col-lg-3 row mx-0">
                 <fieldset>
                     <legend>Servicios y mantenimiento</legend>
                     <hr>
@@ -220,7 +262,7 @@
                     </ul>
                 </fieldset>
             </div>
-            <div class="servicio col-12 col-md-6 col-lg-3">
+            <div class="servicio col-12 col-md-6 col-lg-3 row mx-0">
                 <fieldset>
                     <legend>Diseño de proyectos</legend>
                     <hr>
@@ -246,7 +288,7 @@
                     </ul>
                 </fieldset>
             </div>
-            <div class="servicio col-12 col-md-6 col-lg-3">
+            <div class="servicio col-12 col-md-6 col-lg-3 row mx-0">
                 <fieldset>
                     <legend>Mantenimiento de equipo de refrigeración industrial</legend>
                     <hr>
@@ -746,7 +788,7 @@
                 </div>
             </div>
             <div class="row contenidoFooter justify-content-center justify-content-md-between footer-informacion">
-                <div class="row mx-0 p-5">
+                <div class="row mx-0">
                     <div class="col-12 col-md-6 overflow-hidden">
                         <h3 class="text-center text-uppercase mb-0 titulo-principal b-b-titulo-principal pb-0">
                             Sobre <span>Frio Polar</span>:
@@ -755,9 +797,9 @@
                             <span class="text-white">Dirección:</span>
                         </h4>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1654610659670!5m2!1ses!2smx"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1654610659670!5m2!1ses!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <p class="text-justify p-4 text-white">
                             Nicolas Bravo 341, Centro, <br> Cd. Lázaro Cárdenas, Mich, MX.
                         </p>
@@ -891,7 +933,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row mx-0 p-5">
+                <div class="row mx-0">
                     <h3 class="b-b-titulo-principal mb-4 text-uppercase titulo-principal pb-0 mb-3 text-center">
                         <span>Conglomerados de</span> empresas:
                     </h3>
@@ -1006,10 +1048,11 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
@@ -1018,11 +1061,11 @@
     <script src="js/cotizador.js"></script>
     <script src="js/carousel.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
-        nonce="HW6PS9YL"></script>
+    nonce="HW6PS9YL"></script>
     <div id="fb-root"></div>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 </body>

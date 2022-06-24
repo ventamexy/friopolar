@@ -1,0 +1,42 @@
+/* Menú */
+@media(max-width:991px) {
+
+    .navbar-nav {
+        width: 80%!important;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+
+    .navbar-nav li {
+        padding: 0px;
+        background-color: #a899ff;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .navbar-nav a {
+        width: 100%;
+        background-color: #a899ff;
+        padding: 10px;
+    }
+
+    .navegacion-paginas:nth-child(2) {
+        margin-top: 10px!important;
+        margin-bottom: 25px;
+    }
+
+    .navbar-toggler {
+        color: #fff!important;
+        background-color: #fff!important;
+        margin: 0px 15px;
+    }
+
+    div.informacion-evento p {
+        width: 100%;
+    }
+
+    .servicios-contenido .servicio {
+        margin-bottom: 15px;
+    }
+
+}
