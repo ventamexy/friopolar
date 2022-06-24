@@ -33,7 +33,7 @@ $(document).on("scroll", function() {
         $("#navbar")[0].classList.remove("menu-fijado");
     }
 
-    var scrollY = $("window").context.scrollingElement;
+    var scrollY = document.scrollingElement;
     var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
     
     if ( alturaScrollY == scrollYPosicionActual ) {
@@ -47,7 +47,7 @@ $(document).on("scroll", function() {
 });
 
 $(document).on("click", ".irAbajo", function(){
-    let scrollY = $("window").context.scrollingElement;
+    let scrollY = document.scrollingElement;
     let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
     window.scroll({
         top: alturaScrollY,
