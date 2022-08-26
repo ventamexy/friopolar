@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosFooter.css">
+    <link rel="stylesheet" href="/css/estilosFormularioContacto.css" />
+    <link rel="stylesheet" href="/css/spinnerCarga.css" />
     <link rel="stylesheet" href="css/mediaQuerys.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -109,8 +111,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#contacto">
-                            <i class="fa fa-circle"></i>
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fa fa-circle"></i>                        
                             Contacto
                         </a>
                     </li>
@@ -557,18 +559,7 @@
         </ul>
         <!-- END lista-invitados -->
     </section>
-    <section class="seccion page" id="contacto">
-        <div class="testimoniales contenedor clearfix">
-            <h2>Contactanos</h2>
-            <p>Nicolas Bravo 341. Centro, Cd. Lázaro Cárdenas, Mich, Mx.</p>
-            <p>telefonos +52 (753) 537 1349, +52 (753) 181 1195 y +52 (753) 168 3407.</p>
-            <h5>Correo: <a href="mailto:info@friopolarhl.com">info@friopolarhl.com</a></h5>
-            <div id="mc_embed_signup">
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
+      <footer class="site-footer">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-12">
@@ -972,14 +963,14 @@
                             <li>
                               HL Construcciones:<br/>
                                 <a target="_blank" href="https://hlconstrucciones.com/">
-                                  <i className="fa fa-globe"></i>
+                                  <i class="fa fa-globe"></i>
                                   www.hlconstrucciones.com
                                 </a>
                             </li>
                             <li>
                               Constru RioMar:<br/>
                                 <a target="_blank" href="https://construriomar.com/">
-                                  <i className="fa fa-globe"></i>
+                                  <i class="fa fa-globe"></i>
                                   www.construriomar.com
                                 </a>
                             </li>
@@ -1103,6 +1094,7 @@
     <!-- <script src="js/main.js"></script> -->
     <script src="assets/js/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootbox/dist/bootbox.min.js"></script>
     <script src="js/plugins.js"></script>
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
@@ -1113,6 +1105,7 @@
     <script src="js/main.js"></script>
     <script src="js/cotizador.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/server/enviarEmail.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
