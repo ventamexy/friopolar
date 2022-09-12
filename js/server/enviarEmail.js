@@ -39,6 +39,11 @@ window.addEventListener("load", function() {
                 throw "El correo electrónico es incorrecto.";
             } email.removeClass("campoValidacion");
 
+            // --- Validación de la contestación del reCaptcha.
+            if ( grecaptcha.getResponse().length == 0 ) {
+                throw "Necesita solucionar el captcha para seguir con el proceso del envío del email.";
+            }
+
 
             let mensaje = $("textarea[name='mensaje']");
             let valorMensaje = mensaje.val().trim();
@@ -90,6 +95,7 @@ window.addEventListener("load", function() {
                         $(".btnEnviarPrecalificacion").attr({disabled:false});
                         $(".cargaSpinner").addClass("d-none");
 
+                        grecaptcha.reset();
                         addImageNotificacion(imgNotificacion, estadoEnvio);
 
                     }
@@ -111,6 +117,7 @@ window.addEventListener("load", function() {
             $(".btnEnviarPrecalificacion").attr({disabled:false});
             $(".cargaSpinner").addClass("d-none");
 
+            grecaptcha.reset();
             addImageNotificacion(imgNotificacion, estadoEnvio);
 
         }

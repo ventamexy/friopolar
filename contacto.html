@@ -34,10 +34,12 @@
     <link rel="stylesheet" href="/css/estilosFormularioContacto.css" />
     <link rel="stylesheet" href="/css/spinnerCarga.css" />
     <link rel="stylesheet" href="css/mediaQuerys.css">
+    <link rel="stylesheet" href="css/estilosReCaptcha.css"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -154,6 +156,15 @@
                     <span class="campoObligatorio">Campo obligatorio</span>
                 </div>
             </div>
+            <div class="row d-flex align-items-center position-relative">
+                <div class="g-recaptcha" data-sitekey="6LdWaPIhAAAAAOYBt4Vqx5lTWiiCaqG7wy6cwCYy"></div>
+                <div class="col-1 position-absolute contenedor-boton">
+                    <button class="reload-captcha" type="button">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+            <br/>
             <div class="row justify-content-center">
                 <button 
                 class="btn btn-success btnEnviarPrecalificacion" 
@@ -176,6 +187,7 @@
 
     <!-- <script src="js/main.js"></script> -->
     <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bootbox/dist/bootbox.min.js"></script>
     <script src="js/plugins.js"></script>
